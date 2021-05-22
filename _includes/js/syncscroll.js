@@ -1,9 +1,9 @@
 /**
  * @fileoverview syncscroll - scroll several areas simultaniously
  * @version 0.0.2
- *
+ * 
  * @license MIT, see http://github.com/asvd/intence
- * @copyright 2015 asvd <heliosframework@gmail.com>
+ * @copyright 2015 asvd <heliosframework@gmail.com> 
  */
 
 
@@ -29,7 +29,7 @@ function (exports) {
         var elems = document.getElementsByClassName('syncscroll');
         var i, j, el, found, name;
         for (name in names) {
-            if (Object.prototype.hasOwnProperty.call(names, name)) {
+            if (names.hasOwnProperty(name)) {
                 for (i = 0; i < names[name].length; i++) {
                     names[name][i].removeEventListener(
                         'scroll', names[name][i].syn, 0
@@ -107,13 +107,13 @@ function (exports) {
                                     otherEl.eX =
                                        otherEl[scroll+Left] = scrollX;
                                 }
-
+                                
                                 if (updateY) {
                                     scrollY =Math.round(
                                         yRate *
                                         (otherEl[scroll+Height] -
                                          otherEl[client+Height])
-                                    );
+                                    ); 
 
                                     otherEl.eY =
                                         otherEl[scroll+Top] = scrollY;
@@ -125,9 +125,9 @@ function (exports) {
             })(el, name);
         }
     }
-
-
-
+    
+    
+       
     if (document.readyState == "complete") {
         reset();
     } else {
