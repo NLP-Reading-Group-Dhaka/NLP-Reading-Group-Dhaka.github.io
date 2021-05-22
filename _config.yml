@@ -1,25 +1,23 @@
-title: Conference 2020
+title: Fundamental Neutron Physics Summer School 2022
 description: >-
-  Conference of a random organization on January 1st in Zurich, Switzerland
+  The sixth in a series of summer schools designed to introduce graduate students and new post doctoral fellows to the study of nuclear, particle, and astrophysics with low energy neutrons.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://example.com" # the base hostname & protocol for your site, e.g. https://example.com
+url: "https://fundamentalneutrons.org" # the base hostname & protocol for your site, e.g. https://example.com
+
+theme: jekyll-theme-conference
 
 # Build settings
 markdown: kramdown
 sass:
   style: compressed
 
-# Exclude from processing
+# Additional exclude from processing
 exclude:
   - .github/
-  - venv/
   - README.md
   - LICENSE.md
   - REDISTRIBUTED.md
-  - screenshot.png
-  - jekyll-theme-conference.gemspec
   - purgecss.config.js
-  - _config.example.yml
 
 # Collections and their defaults
 collections:
@@ -50,23 +48,122 @@ defaults:
     values:
       layout: room
 
-# Theme default values
+
 conference:
+
+  # Language
   lang: en
+
+  # Show theme errors:
   show_errors: True
 
+  # Navigation bar
+  navigation:
+    logo:
+      name: FNPSS
+      # img: ''
+      url: 'https://fundamentalneutrons.org/'
+    links:
+      - name: Program
+        relative_url: /program/
+      - name: Talks
+        relative_url: /talks/
+      - name: Speakers
+        relative_url: /speakers/
+      - name: Location
+        relative_url: /location/
+      - name: Previous Editions
+        menu:
+          - name: 2022 (current)
+            disabled: true
+          - name: 2018 (NCSU)
+            absolute_url: http://neutron.physics.ncsu.edu/NeutronSummerSchool/
+          - name: 2015 (UTK)
+            absolute_url: http://www.phys.utk.edu/neutron-summer-school/
+
+  # Main landing page
+  main:
+    # logo:
+    #   img: ''
+    links:
+      - name: Program
+        relative_url: /program/
+      - name: How to get there
+        relative_url: /location/
+      - name: Tickets
+        disabled: true
+        absolute_url: ''
+
+  # Information boxes
+  info_bars:
+    - title: Stay tuned for information on the dates of the summer school!
+      color: primary
+      main_only: true
+      text: |
+        The University of Manitoba and the University of Winnipeg will be jointly organizing the Fundamental Neutron Physics Summer School in July 2022.
+
+        ---
+
+        Stay tuned for exact dates, program, and registration information.
+    - text: This is just some random content for demonstration purposes.
+      color: warning
+      pages_only: true
+
+  # Live indications
+  live:
+    date: 15.07.2022
+    timezone: GMT-5
+    time_stop: 240      # in minutes
+    streaming:
+      time_pause:   60  # in minutes
+      time_prepend:  5  # in minutes
+      time_extend:   5  # in minutes
+    demo: false
+
+  talks:
+    # Talk categories
+    main_categories:
+      - name: Theory
+        color: info
+      - name: Experiment
+        color: success
+      - name: Applications
+        color: success
+      - name: Social
+        color: success
+
+    # Hide icons on talk overview page
+    hide_icons: false
+
   speakers:
+    # Show first and last name
     show_firstname: true
 
   location:
+    # URL of location / room overview page
     url: '/location'
+
+    # Disable links to locations
+    hide: false
     map:
+      # show map
       enable: true
-      default_zoom: 17
-      home_coord: 47.37808, 8.53935
+      # initial map center point
+      home_coord: 49.8951, -97.1384
+      # Alternative map providers can be found on https://leaflet-extras.github.io/leaflet-providers/preview/
+      # The following do match the Bootstrap design not too badly:
+      #   - Hydda.Full
+      #   - Thunderforest.Neighbourhood
+      #   - Esri.WorldTopoMap
       map_provider: "OpenStreetMap.Mapnik"
+      default_zoom: 10
 
   program:
+    # URL of program page
     url: '/program'
-    time_steps: 15
+
+    # Time steps in program table
+    time_steps: 60 # in minutes
+
+    # Show intermediary time steps (next to full hours)
     show_alltimes: true
