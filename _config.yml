@@ -1,8 +1,8 @@
-title: Fundamental Neutron Physics Summer School 2022
+title: NLP Reading Group, Dhaka
 description: >-
-  The sixth in a series of summer schools designed to introduce graduate students and new post doctoral fellows to the study of nuclear, particle, and astrophysics with low energy neutrons.
+  Reading Group for Natural Lanugage Processing and Machine Learning Enthusiasts
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://fundamentalneutrons.org" # the base hostname & protocol for your site, e.g. https://example.com
+url: "https://nlp-reading-group-dhaka.github.io/" # the base hostname & protocol for your site, e.g. https://example.com
 
 theme: jekyll-theme-conference
 
