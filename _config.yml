@@ -1,6 +1,6 @@
 title: NLP Reading Group, Dhaka
 description: >-
-  Reading Group for Natural Lanugage Processing and Machine Learning Enthusiasts
+  A Dhaka based Reading Group for Natural Language Processing and Deep Learning Research
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://nlp-reading-group-dhaka.github.io/" # the base hostname & protocol for your site, e.g. https://example.com
 
@@ -91,22 +91,23 @@ conference:
         relative_url: /program/
       - name: How to get there
         relative_url: /location/
-      - name: Tickets
-        disabled: true
-        absolute_url: ''
+      - name: Registration
+        absolute_url: https://forms.gle/F1VVMUGfqhZxHwALA
 
   # Information boxes
   info_bars:
-    - title: Stay tuned for information on the dates of the summer school!
+    - title: Registration open for Fall 2021 reading sessions!
       color: primary
       main_only: true
       text: |
-        The University of Manitoba and the University of Winnipeg will be jointly organizing the Fundamental Neutron Physics Summer School in July 2022.
+        The fall course will build on top of summer readings. We plan to host more advanced research discussions in natural
+        language processing and its subsequent fields. We have now prepared a course including 15 nlp papers,
+        4 hands-on tutorials, and 2 lightning sessions.
 
         ---
 
-        Stay tuned for exact dates, program, and registration information.
-    - text: This is just some random content for demonstration purposes.
+        Register here - [https://forms.gle/F1VVMUGfqhZxHwALA](https://forms.gle/F1VVMUGfqhZxHwALA)
+    - text: We usually meet each Sunday Bangladesh time 8 pm.
       color: warning
       pages_only: true
 
@@ -124,13 +125,15 @@ conference:
   talks:
     # Talk categories
     main_categories:
-      - name: Theory
+      - name: Sentence Classification
         color: info
-      - name: Experiment
+      - name: Sequence Labeling
         color: success
-      - name: Applications
+      - name: Seq2seq and Attention
         color: success
-      - name: Social
+      - name: Pre-trained Language Models & Fine-tuning
+        color: success
+      - name: Question answering, Summarization
         color: success
 
     # Hide icons on talk overview page

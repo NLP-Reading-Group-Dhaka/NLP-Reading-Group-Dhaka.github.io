@@ -1,12 +1,10 @@
 ---
-name: Eu Nisl Nunc Mi Ipsum Faucibus
+name: Supervised and Semi-Supervised Text Categorization using LSTM for Region Embeddings, Johnson et al. 2016
 speakers:
   - The Anonymous
 categories:
-  - Cat B
+  - Sentence Classification
   - Talk
 ---
 
-Molestie nunc non blandit massa. Ultrices gravida dictum fusce ut placerat orci nulla. Sed enim ut sem viverra aliquet. Ac tincidunt vitae semper quis lectus nulla at volutpat. Diam donec adipiscing tristique risus nec. Sed enim ut sem viverra aliquet eget. Aliquam vestibulum morbi blandit cursus risus. Blandit cursus risus at ultrices. Mauris pharetra et ultrices neque ornare aenean euismod elementum.
-
-Justo laoreet sit amet cursus sit amet. Euismod nisi porta lorem mollis. Id ornare arcu odio ut sem. Neque aliquam vestibulum morbi blandit cursus risus. Eu volutpat odio facilisis mauris. Velit dignissim sodales ut eu sem integer. Iaculis nunc sed augue lacus viverra vitae. Dictumst vestibulum rhoncus est pellentesque. Parturient montes nascetur ridiculus mus mauris vitae.
+One-hot CNN (convolutional neural network) has been shown to be effective for text categorization (Johnson & Zhang, 2015). We view it as a special case of a general framework which jointly trains a linear model with a non-linear feature generator consisting of `text region embedding + pooling'. Under this framework, we explore a more sophisticated region embedding method using Long Short-Term Memory (LSTM). LSTM can embed text regions of variable (and possibly large) sizes, whereas the region size needs to be fixed in a CNN. We seek effective and efficient use of LSTM for this purpose in the supervised and semi-supervised settings. The best results were obtained by combining region embeddings in the form of LSTM and convolution layers trained on unlabeled data. The results indicate that on this task, embeddings of text regions, which can convey complex concepts, are more useful than embeddings of single words in isolation. We report performances exceeding the previous best results on four benchmark datasets.

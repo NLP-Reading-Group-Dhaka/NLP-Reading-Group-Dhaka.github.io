@@ -1,9 +1,9 @@
 ---
-name: Arcu Non Odio
+name: A Sensitivity Analysis of (and Practitioners’ Guide to) Convolutional Neural Networks for Sentence Classification, Zhang et al. IJCNLP 2017 
 speakers:
   - Alex Rosales
 categories:
-  - Cat A
+  - Sentence Classification
   - Talk
 links:
   - name: Recodring
@@ -13,6 +13,4 @@ links:
     absolute_url: https://en.wikipedia.org
 ---
 
-Duis at tellus at urna condimentum mattis pellentesque id nibh. In fermentum et sollicitudin ac orci phasellus egestas. Convallis aenean et tortor at risus viverra. Mus mauris vitae ultricies leo integer. Metus dictum at tempor commodo ullamcorper. Sem nulla pharetra diam sit. Eu lobortis elementum nibh tellus molestie nunc.
-
-Adipiscing enim eu turpis egestas pretium aenean pharetra magna ac. Tellus at urna condimentum mattis. Suspendisse sed nisi lacus sed viverra tellus. Ullamcorper velit sed ullamcorper morbi tincidunt ornare. Sed vulputate odio ut enim blandit volutpat maecenas volutpat blandit. Nunc eget lorem dolor sed viverra. Id volutpat lacus laoreet non curabitur.
+Convolutional Neural Networks (CNNs) have recently achieved remarkably strong performance on the practically important task of sentence classification (kim 2014, kalchbrenner 2014, johnson 2014). However, these models require practitioners to specify an exact model architecture and set accompanying hyperparameters, including the filter region size, regularization parameters, and so on. It is currently unknown how sensitive model performance is to changes in these configurations for the task of sentence classification. We thus conduct a sensitivity analysis of one-layer CNNs to explore the effect of architecture components on model performance; our aim is to distinguish between important and comparatively inconsequential design decisions for sentence classification. We focus on one-layer CNNs (to the exclusion of more complex models) due to their comparative simplicity and strong empirical performance, which makes it a modern standard baseline method akin to Support Vector Machine (SVMs) and logistic regression. We derive practical advice from our extensive empirical results for those interested in getting the most out of CNNs for sentence classification in real world settings.
