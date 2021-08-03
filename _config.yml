@@ -61,7 +61,7 @@ conference:
   # Navigation bar
   navigation:
     logo:
-      name: ML Reading Group, Dhaka
+      name: NLP & ML
       # img: ''
       url:
     links:
