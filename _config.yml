@@ -61,9 +61,9 @@ conference:
   # Navigation bar
   navigation:
     logo:
-      name: FNPSS
+      name: ML Reading Group, Dhaka
       # img: ''
-      url: 'https://fundamentalneutrons.org/'
+      url:
     links:
       - name: Program
         relative_url: /program/
