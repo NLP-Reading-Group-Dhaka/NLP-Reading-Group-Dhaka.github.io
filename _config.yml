@@ -61,9 +61,9 @@ conference:
   # Navigation bar
   navigation:
     logo:
-      name: FNPSS
+      name: NLP & ML
       # img: ''
-      url: 'https://fundamentalneutrons.org/'
+      url:
     links:
       - name: Program
         relative_url: /program/
