@@ -32,3 +32,11 @@ days:
       - name: Tutorial Sequence Prediction, NER  and POS tagging
         time_start: '16:30'
         time_end: '17:30'
+
+      - name: Neural Machine Translation and Sequence-to-sequence Models A Tutorial, Graham Neubig 2017
+        time_start: '17:30'
+        time_end: '17:40'
+
+      - name: Effective Approaches to Attention-based Neural Machine Translation, Luong et al. EMNLP 2015
+        time_start: '17:40'
+        time_end: '17:50'
