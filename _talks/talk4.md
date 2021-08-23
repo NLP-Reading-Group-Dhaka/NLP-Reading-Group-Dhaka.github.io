@@ -1,7 +1,8 @@
 ---
 name: Supervised and Semi-Supervised Text Categorization using LSTM for Region Embeddings, Johnson et al. 2016
 speakers:
-  - The Anonymous
+  - Zannatul Naim Shanto
+  - Nusrat Jahan Suha
 categories:
   - Sentence Classification
   - Talk

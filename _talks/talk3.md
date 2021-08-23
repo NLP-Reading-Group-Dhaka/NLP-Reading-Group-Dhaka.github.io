@@ -1,7 +1,7 @@
 ---
 name: A Sensitivity Analysis of (and Practitioners’ Guide to) Convolutional Neural Networks for Sentence Classification, Zhang et al. IJCNLP 2017 
 speakers:
-  - Sakira Hasan
+  - Sakira Hassan
   - Rabiul Awal
 categories:
   - Sentence Classification
