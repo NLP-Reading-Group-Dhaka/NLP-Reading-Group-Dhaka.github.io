@@ -33,13 +33,13 @@
         <tbody>
           <tr>
 
-            <th scope="col" class="text-center" style= "width:245px !important;">
+            <th scope="col" class="text-left" style= "width:245px !important;">
               Date
             </th>
-            <th scope="col" class="text-center" style= "width:245px !important;">
+            <th scope="col" class="text-left" style= "width:245px !important;">
               Presenter
             </th>
-            <th scope="col" class="text-center" style= "width:auto !important;">
+            <th scope="col" class="text-left" style= "width:auto !important;">
               Title
             </th>
         </tr>
@@ -91,50 +91,20 @@
                   {%- assign d_end_hour = current_day | minus: talk_end_day | times: 24 | plus: current_hour | minus: talk_end_hour -%}
                   {%- assign d_end_min = current_min | minus: talk_end_min -%}
 
-                  {%- assign has_started = false -%}
-                  {%- if d_start_hour == 0 and d_start_min > 0 -%}
-                    {%- assign has_started = true -%}
-                  {%- endif -%}
-                  {%- if d_start_hour > 0 -%}
-                    {%- assign has_started = true -%}
-                  {%- endif -%}
-
-                  {%- assign has_ended = false -%}
-                  {%- if d_end_hour == 0 and d_end_min >= 0 -%}
-                    {%- assign has_ended = true -%}
-                  {%- endif -%}
-                  {%- if d_end_hour > 0 -%}
-                    {%- assign has_ended = true -%}
-                  {%- endif -%}
-
-                  {%- if has_started == true and has_ended == false -%}
-                    {%- assign active_talk = true -%}
-                  {%- endif -%}
-
                   {%- if d_start_hour == 0 and d_start_min == 0 -%}
 
                     {%- assign talk_nbr_steps = talk_duration_min | divided_by: site.conference.program.time_steps -%}
                     {%- include partials/get_main_category.html -%}
                    
-                    {%- if current_min == 0 -%}
-                    <td scope="row" class="col-title text-center" style="z-index: {{ z-index-max }}">
-                      {{- current_time -}}
+                  <td class="font-weight-light mb-2 text-left" maxlength="10">
+                    {%- include partials/show_date.html %}
+                  </td>
+                    <td class="font-weight-light mb-2 text-left">
+                      {%- include partials/list_speakers.html %}
                     </td>
-                  {%- elsif site.conference.program.show_alltimes -%}
-                    <td scope="row" class="col-title text-center text-muted font-weight-normal" style="z-index: {{ z-index-max }}">
-                      :{{ current_min }}
+                    <td class="mb-2 text-left">
+                      {%- include partials/show_talk.html %}
                     </td>
-                  {%- else -%}
-                    <td scope="row" class="col-title" style="z-index: {{ z-index-max }}"></td>
-                  {%- endif %}
-                  
-                      
-                      <td class="font-weight-light mb-2 text-center">
-                        {%- include partials/list_speakers.html %}
-                      </td>
-                      <td class="mb-2 text-center">
-                        {%- include partials/show_talk.html %}
-                      </td>
                       
                     
                     {%- assign active_talk = true %}
