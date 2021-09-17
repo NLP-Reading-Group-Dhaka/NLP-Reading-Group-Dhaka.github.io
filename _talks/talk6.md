@@ -1,7 +1,8 @@
 ---
 name: Tutorial Sequence Prediction, NER  and POS tagging
 speakers:
-  - The Anonymous
+  - Rabiul Awal
+date: 2021-09-12
 categories:
   - Sequence Labeling
   - Talk

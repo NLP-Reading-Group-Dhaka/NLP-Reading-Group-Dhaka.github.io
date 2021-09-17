@@ -2,7 +2,7 @@
 name: CHARAGRAM Embedding Words and Sentences via Character n-grams
 speakers:
   - Rabiul Awal
-date: 2020-09-01
+date: 2021-08-01
 categories:
   - Sentence Classification
   - Talk

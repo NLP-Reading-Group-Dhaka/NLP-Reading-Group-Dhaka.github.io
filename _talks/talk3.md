@@ -3,6 +3,7 @@ name: A Sensitivity Analysis of (and Practitioners’ Guide to) Convolutional Ne
 speakers:
   - Sakira Hassan
   - Rabiul Awal
+date: 2021-08-15
 categories:
   - Sentence Classification
   - Talk

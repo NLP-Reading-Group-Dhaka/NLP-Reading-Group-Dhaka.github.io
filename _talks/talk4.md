@@ -3,6 +3,7 @@ name: Supervised and Semi-Supervised Text Categorization using LSTM for Region E
 speakers:
   - Zannatul Naim Shanto
   - Nusrat Jahan Suha
+date: 2021-08-22
 categories:
   - Sentence Classification
   - Talk

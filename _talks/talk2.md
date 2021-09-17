@@ -2,6 +2,7 @@
 name: Character-level Convolutional Networks for Text Classification
 speakers:
   - Shadman Rohan
+date: 2021-08-08
 categories:
   - Sentence Classification
   - Talk
