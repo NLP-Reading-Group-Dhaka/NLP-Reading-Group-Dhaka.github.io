@@ -1,11 +1,11 @@
 {% include partials/header.html %}
-  {% assign nbr_days = site.data.program.days | size -%}
+  {% assign nbr_days = site.data.seminar.days | size -%}
 
   <h1 class="display-5 {% if nbr_days > 1 -%} mb-2 {%- else -%} mb-4 {%- endif %}">
     {%- if page.title -%}
       {{- page.title -}}
     {%- else -%}
-      {{- site.data.lang[site.conference.lang].program.title | default: "Program" -}}
+      {{- site.data.lang[site.conference.lang].semina.title | default: "Seminar" -}}
     {%- endif -%}
   </h1>
 
@@ -13,7 +13,7 @@
 
   {%- if nbr_days > 1 %}
     <ul class="nav justify-content-center mb-3 btn-group" id="day-list" role="tablist">
-      {%- for d in site.data.program.days -%}
+      {%- for d in site.data.seminar.days -%}
         {%- include partials/get_day_hash.html %}
         <li class="nav-item" role="presentation">
           <a class="nav-link btn btn-outline-secondary {%- if forloop.index == 1 %} active{% endif %}" id="tab-{{ day_hash }}" data-toggle="tab" {%- if d.date %} data-date="{{ d.date }}" {%- endif %} href="#{{ day_hash }}" role="tab" aria-controls="{{ day_hash }}" aria-selected="{% if forloop.index == 1 %}true{% else %}false{% endif %}">{{ day_name }}</a>
@@ -23,7 +23,7 @@
     <div class="tab-content" id="day-content">
   {%- endif %}
 
-  {%- for d in site.data.program.days -%}
+  {%- for d in site.data.seminar.days -%}
     {%- if nbr_days > 1 -%}
       {%- include partials/get_day_hash.html %}
       <div class="tab-pane {%- if forloop.index == 1 %} active{% endif %}" id="{{ day_hash }}" role="tabpanel" aria-labelledby="tab-{{ day_hash }}">
@@ -50,7 +50,7 @@
           {%- endif -%}
 
           {%- assign day_duration_min = day_end_hour | minus: day_start_hour | times: 60 | minus: day_start_min | plus: day_end_min -%}
-          {%- assign nbr_steps = day_duration_min | divided_by: site.conference.program.time_steps -%}
+          {%- assign nbr_steps = day_duration_min | divided_by: site.conference.seminar.time_steps -%}
 
           <!--
           The shadow of a previous program block should be above a later program block, thus
@@ -63,12 +63,12 @@
 
           {%- for i in (1..nbr_steps) -%}
             {%- assign current_day = 0 -%}
-            {%- assign current_hour = i | minus: 1 | times: site.conference.program.time_steps | plus: day_start_min | divided_by: 60 | floor | plus: day_start_hour -%}
+            {%- assign current_hour = i | minus: 1 | times: site.conference.seminar.time_steps | plus: day_start_min | divided_by: 60 | floor | plus: day_start_hour -%}
             {%- if current_hour >= 24 -%}
               {%- assign current_day = current_hour | divided_by: 24 | floor -%}
               {%- assign current_hour = current_hour | modulo: 24 -%}
             {%- endif -%}
-            {%- assign current_min = i | minus: 1 | times: site.conference.program.time_steps | plus: day_start_min | modulo: 60 -%}
+            {%- assign current_min = i | minus: 1 | times: site.conference.seminar.time_steps | plus: day_start_min | modulo: 60 -%}
             {%- if current_min < 10 -%}
               {%- assign current_time = current_hour | append: ':0' | append: current_min -%}
             {%- else -%}
@@ -93,7 +93,7 @@
 
                   {%- if d_start_hour == 0 and d_start_min == 0 -%}
 
-                    {%- assign talk_nbr_steps = talk_duration_min | divided_by: site.conference.program.time_steps -%}
+                    {%- assign talk_nbr_steps = talk_duration_min | divided_by: site.conference.seminar.time_steps -%}
                     {%- include partials/get_main_category.html -%}
                    
                   <td class="font-weight-light mb-2 text-left" maxlength="10">
@@ -138,7 +138,7 @@
   {%- endif -%}
 
   {%- if site.conference.talks.main_categories %}
-    <h5 class="mt-4">{{ site.data.lang[site.conference.lang].program.legend | default: "Caption" }}</h5>
+    <h5 class="mt-4">{{ site.data.lang[site.conference.lang].seminar.legend | default: "Caption" }}</h5>
       {%- for main_cat in site.conference.talks.main_categories %}
         <div class="d-block d-sm-inline-block m-1 p-1 pl-2 pr-2 border-soft-{{ main_cat.color }} bg-soft-{{ main_cat.color }} font-weight-normal">
           {{- main_cat.name -}}

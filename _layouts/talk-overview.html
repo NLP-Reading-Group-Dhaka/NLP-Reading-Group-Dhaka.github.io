@@ -31,7 +31,7 @@
 
               {% if talk.hide -%}
                 {%- assign talk_scheduled = false -%}
-                {%- for d in site.data.program.days -%}
+                {%- for d in site.data.seminar.days -%}
                   {%- include partials/get_day_hash.html -%}
                   {%- for r in d.rooms -%}
                     {%- assign room = site.rooms | where: 'name', r.name | first -%}
@@ -74,7 +74,7 @@
 
               <p class="mb-0">
                 {%- if site.conference.live and talk.hide != true -%}
-                  {% for d in site.data.program.days -%}
+                  {% for d in site.data.seminar.days -%}
                     {%- for r in d.rooms -%}
                       {%- for t in r.talks -%}
                         {%- if talk.name == t.name -%}

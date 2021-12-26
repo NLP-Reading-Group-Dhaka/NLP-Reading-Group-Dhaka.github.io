@@ -34,8 +34,8 @@ en:
     talks: Talks in this room
     focus_conf: Center map on conference location
     focus_me: Show my current location
-  program:
-    title: Program
+  seminar:
+    title: Seminar
     legend: Caption
   speaker:
     overview: Speakers

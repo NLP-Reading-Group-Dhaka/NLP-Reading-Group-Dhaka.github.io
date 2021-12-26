@@ -10,7 +10,7 @@ window.conference = {};
 //   Imported via CSS and webfonts
 
 // Program
-{% include js/conference-program.js %}
+{% include js/conference-seminar.js %}
 
 // Leaflet (Map Display)
 {% if site.conference.location.hide != true and site.conference.location.map.enable %}

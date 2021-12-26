@@ -1,7 +1,7 @@
 // Vertical Scroll Sync
 {% include js/syncscroll.js %}
 
-window.conference.program = (function() {
+window.conference.seminar = (function() {
     let updateHash = function (hash) {
         let scrollPosition = $('body').scrollTop() || $('html').scrollTop();
         window.location.hash = hash;
@@ -45,4 +45,4 @@ window.conference.program = (function() {
     };
 })();
 
-window.conference.program.init();
+window.conference.seminar.init();

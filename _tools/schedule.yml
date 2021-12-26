@@ -36,7 +36,7 @@ jobs:
     - name: Delete source and add generated files
       run: |
         git rm schedule.json
-        git add --ignore-errors _data/program.yml _rooms _speakers _talks
+        git add --ignore-errors _data/seminar.yml _rooms _speakers _talks
 
     - name: Add new commit and push
       run: |

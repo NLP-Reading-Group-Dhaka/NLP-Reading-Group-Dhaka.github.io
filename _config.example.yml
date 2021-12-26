@@ -64,8 +64,8 @@ conference:
       # img: ''
       url: 'https://digitale-gesellschaft.ch/'
     links:
-      - name: Program
-        relative_url: /program/
+      - name: Seminar
+        relative_url: /seminar/
       - name: Talks
         relative_url: /talks/
       - name: Speakers
@@ -86,8 +86,8 @@ conference:
     # logo:
     #   img: ''
     links:
-      - name: Program
-        relative_url: /program/
+      - name: Seminar
+        relative_url: /seminar/
       - name: How to get there
         relative_url: /location/
       - name: Tickets
@@ -154,9 +154,9 @@ conference:
       map_provider: "OpenStreetMap.Mapnik"
       default_zoom: 17
 
-  program:
+  seminar:
     # URL of program page
-    url: '/program'
+    url: '/seminar'
 
     # Time steps in program table
     time_steps: 15 # in minutes

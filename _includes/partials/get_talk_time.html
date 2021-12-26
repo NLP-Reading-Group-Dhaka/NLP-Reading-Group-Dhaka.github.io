@@ -15,9 +15,9 @@
 {%- endif -%}
 
 {%- assign talk_start_hour = talk_start | split: ':' | first | plus: 0 -%}
-{%- assign talk_start_min = talk_start | split: ':' | last | divided_by: site.conference.program.time_steps | floor | times: site.conference.program.time_steps -%}
+{%- assign talk_start_min = talk_start | split: ':' | last | divided_by: site.conference.seminar.time_steps | floor | times: site.conference.seminar.time_steps -%}
 {%- assign talk_end_hour = talk_end | split: ':' | first | plus: 0 -%}
-{%- assign talk_end_min = talk_end | split: ':' | last | divided_by: site.conference.program.time_steps | ceil | times: site.conference.program.time_steps -%}
+{%- assign talk_end_min = talk_end | split: ':' | last | divided_by: site.conference.seminar.time_steps | ceil | times: site.conference.seminar.time_steps -%}
 
 {%- assign talk_start_hour_24h = talk_start_day | times: 24 | plus: talk_start_hour -%}
 {%- assign talk_end_hour_24h = talk_end_day | times: 24 | plus: talk_end_hour -%}

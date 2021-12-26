@@ -1,12 +1,12 @@
 window.conference.live = (function() {
-    {% assign d = site.data.program.days | first -%}
+    {% assign d = site.data.seminar.days | first -%}
     {%- include partials/get_day_time.html -%}
     {%- assign t = day_start_talk -%}
 
     {%- include partials/get_talk_timestamp.html -%}
     {%- assign conf_start = timestamp_start -%}
 
-    {%- assign d = site.data.program.days | last -%}
+    {%- assign d = site.data.seminar.days | last -%}
     {%- include partials/get_day_time.html -%}
     {%- assign t = day_end_talk -%}
 

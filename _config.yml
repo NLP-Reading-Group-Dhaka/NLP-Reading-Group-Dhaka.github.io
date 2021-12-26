@@ -61,36 +61,34 @@ conference:
   # Navigation bar
   navigation:
     logo:
-      name: NLP & ML
+      name: NLPDhaka
       # img: ''
       url:
     links:
-      - name: Program
-        relative_url: /program/
+      - name: Seminar
+        relative_url: /seminar/
       - name: Talks
         relative_url: /talks/
       - name: Speakers
         relative_url: /speakers/
-      - name: Location
-        relative_url: /location/
+      # - name: Location
+      #   relative_url: /location/
       - name: Previous Editions
         menu:
           - name: 2022 (current)
             disabled: true
-          - name: 2018 (NCSU)
+          - name: 2021
             absolute_url: http://neutron.physics.ncsu.edu/NeutronSummerSchool/
-          - name: 2015 (UTK)
-            absolute_url: http://www.phys.utk.edu/neutron-summer-school/
 
   # Main landing page
   main:
     # logo:
     #   img: ''
     links:
-      - name: Program
-        relative_url: /program/
-      - name: How to get there
-        relative_url: /location/
+      - name: Seminar
+        relative_url: /seminar/
+      - name: Talks
+        relative_url: /talks/
       - name: Registration
         absolute_url: https://forms.gle/F1VVMUGfqhZxHwALA
 
@@ -162,9 +160,9 @@ conference:
       map_provider: "OpenStreetMap.Mapnik"
       default_zoom: 10
 
-  program:
+  seminar:
     # URL of program page
-    url: '/program'
+    url: '/seminar'
 
     # Time steps in program table
     time_steps: 60 # in minutes

@@ -53,7 +53,7 @@ def parse_frab(file_path):
             'talks': [],
             'speakers': [],
             'rooms': [],
-            'program': []
+            'seminar': []
         }
 
         for day in data['schedule']['conference']['days']:
@@ -128,7 +128,7 @@ def parse_frab(file_path):
                         talk_end[1], talk_end[2],
                         ' +{}'.format(talk_end[0]) if talk_end[0] > 0 else '')
 
-                    content['program'].append({
+                    content['seminar'].append({
                         'name': talk['title'],
                         'date': day['date'],
                         'time_start': talk['start'],
@@ -233,13 +233,13 @@ def create_files(content, folder_name, file_name, file_content, clean=False):
                 f.write(text)
 
 
-default_program_structure = {
-    'file_path': os.path.join('_data', 'program.yml'),
+default_seminar_structure = {
+    'file_path': os.path.join('_data', 'seminar.yml'),
     'date_format': '%Y-%m-%d'
 }
 
 
-def create_program(content, file_path, date_format=None, lc_time=None):
+def create_seminar(content, file_path, date_format=None, lc_time=None):
     # verify if folder exists, otherwise create it
     if not os.path.exists(os.path.dirname(file_path)):
         os.makedirs(os.path.dirname(file_path))
@@ -329,9 +329,9 @@ if __name__ == "__main__":
     default_group.add_argument('-r', '--rooms',
                                action='store_const', const=True,
                                help='Create Markdown files for rooms')
-    default_group.add_argument('-p', '--program',
+    default_group.add_argument('-p', '--seminar',
                                action='store_const', const=True,
-                               help='Create YAML data file for program')
+                               help='Create YAML data file for seminar')
 
     manual_group = parser.add_argument_group('manual options')
 
@@ -383,7 +383,7 @@ if __name__ == "__main__":
                      clean=True)
         create_files(content['rooms'], **default_file_structure['rooms'],
                      clean=True)
-        create_program(content['program'], **default_program_structure,
+        create_seminar(content['seminar'], **default_seminar_structure,
                        lc_time=args.lc_time)
 
     elif args.talks or args.speakers or args.rooms or args.create_files:
@@ -421,9 +421,9 @@ if __name__ == "__main__":
 
         create_files(content, **file_args)
 
-    elif args.program:
+    elif args.seminar:
         # get default settings
-        program_args = default_program_structure
+        seminar_args = default_seminar_structure
 
         # overwrite default settings and/or define remaining settings
         if args.file_path:
@@ -434,4 +434,4 @@ if __name__ == "__main__":
             file_args['lc_time'] = args.lc_times
 
         content = parse_csv(args.file)
-        create_program(content, **program_args)
+        create_seminar(content, **seminar_args)
