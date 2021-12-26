@@ -2,6 +2,8 @@
 name: Hierarchical Attention Networks for Document Classification, Yang et al. NAACL 2016
 speakers:
   - The Anonymous
+  
+date: 2021-10-29
 categories:
   - Seq2seq and Attention
   - Talk

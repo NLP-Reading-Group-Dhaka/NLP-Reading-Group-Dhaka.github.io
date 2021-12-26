@@ -2,6 +2,7 @@
 name: Neural Machine Translation and Sequence-to-sequence Models A Tutorial, Graham Neubig 2017
 speakers:
   - The Anonymous
+date: 2021-10-22
 categories:
   - Sequence Labeling
   - Talk

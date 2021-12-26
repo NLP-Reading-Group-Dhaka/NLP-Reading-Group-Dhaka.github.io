@@ -2,6 +2,7 @@
 name: Bidirectional LSTM-CRF Models for Sequence Tagging
 speakers:
   - The Anonymous
+date: 2021-09-22
 categories:
   - Sequence Labeling
   - Talk

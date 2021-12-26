@@ -2,6 +2,7 @@
 name: Show, Attend and Tell Neural Image Caption Generation with Visual Attention, Xu et al. ICML 2015
 speakers:
   - Rabiul Awal
+date: 2021-11-01
 categories:
   - Seq2seq and Attention
   - Talk

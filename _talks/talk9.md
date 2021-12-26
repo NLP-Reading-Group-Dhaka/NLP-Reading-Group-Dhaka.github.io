@@ -2,6 +2,7 @@
 name: Convolutional Sequence to Sequence Learning, Gehring et al. ICML 2017
 speakers:
   - The Anonymous
+date: 2021-08-29
 categories:
   - Seq2seq and Attention
   - Talk
