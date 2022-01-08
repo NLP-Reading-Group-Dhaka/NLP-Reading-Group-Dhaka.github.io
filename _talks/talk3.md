@@ -10,7 +10,7 @@ categories:
 links:
   - name: Recodring
     icon: video
-    absolute_url: https://media.ccc.de/
+    absolute_url: https://drive.google.com/file/d/1gSRfWFeWvpCLncspWaXfjT057xTueGD3/view?usp=sharing 
   - name: Pdf
     absolute_url: https://aclanthology.org/I17-1026.pdf
 ---

@@ -37,10 +37,17 @@ days:
         time_start: '17:10'
         time_end: '17:20'
 
-      - name: Show, Attend and Tell Neural Image Caption Generation with Visual Attention, Xu et al. ICML 2015
+      - name: EMLO + ULMFiT
+        time_start: '17:10'
+        time_end: '17:20'
+
+      - name: SQuAD 100,000+ Questions for Machine Comprehension of Text, Rajpurkar et al. EMNLP 2016
         time_start: '17:30'
         time_end: '17:40'
 
+      - name: Bidirectional Attention Flow for Machine Comprehension, Seo et al. ICLR 2017
+        time_start: '17:30'
+        time_end: '17:40'
 
   - name: Winter 2022
     talks:
