@@ -90,21 +90,21 @@ conference:
       - name: Talks
         relative_url: /talks/
       - name: Registration
-        absolute_url: https://forms.gle/F1VVMUGfqhZxHwALA
+        absolute_url: https://forms.gle/jRtYpGA9v4LMdA6e6
 
   # Information boxes
   info_bars:
-    - title: Registration open for Fall 2021 reading sessions!
+    - title: Registration open for Winter 2022 reading sessions!
       color: primary
       main_only: true
       text: |
-        The fall course will build on top of summer readings. We plan to host more advanced research discussions in natural
-        language processing and its subsequent fields. We have now prepared a course including 15 nlp papers,
-        4 hands-on tutorials, and 2 lightning sessions.
+        An introductory course on deep learning and advanced Natural Language Processing (NLP) 
+        research. This reading course is specifically focused on neural networks for NLP. We will cover 12 
+        research papers and 4 hands-on-tutorials for 4 months starting from the mid of January 2022.
 
         ---
 
-        Register here - [https://forms.gle/F1VVMUGfqhZxHwALA](https://forms.gle/F1VVMUGfqhZxHwALA)
+        Register here - [https://forms.gle/jRtYpGA9v4LMdA6e6](https://forms.gle/jRtYpGA9v4LMdA6e6)
     - text: We usually meet each Sunday Bangladesh time 8 pm.
       color: warning
       pages_only: true

@@ -2,7 +2,7 @@
 name: Effective Approaches to Attention-based Neural Machine Translation, Luong et al. EMNLP 2015
 speakers:
   - The Anonymous
-date: 2021-11-22
+date: 2021-11-21
 categories:
   - Seq2seq and Attention
   - Talk

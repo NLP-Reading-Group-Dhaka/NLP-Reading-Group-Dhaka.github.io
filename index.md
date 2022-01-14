@@ -1,27 +1,25 @@
 ---
 layout: home
 ---
-An advanced course on natural language processing. 
-We follow a graduate level reading course format and
-presented reading list focuses on state-of-the-art NLP research. 
-We host occasional tutorials and weekly reading sessions. 
-Tutorial sessions should be intended to summarize existing works 
-on a certain topic. Typically, we meet each week to discuss a paper
-on NLP and brainstorm ideas on the particular subject. 
-Participants include expert researchers to undergraduate students 
-joining from many parts of the world. 
-
-An introductory reading can be found in our previous season
-[NLPSu21](https://docs.google.com/document/d/e/2PACX-1vRia76U_JQwpLgGoQRH2mQHJewl1kJcXKiOib81ga3WS6vFkQUucRLwtGI_rUSxQqtett1h2z0cJetl/pub).
+An introductory course on deep learning and advanced Natural Language Processing (NLP) research. This reading group is specifically focused on neural networks for NLP. We will cover 12 research papers and 4 hands-on-tutorials for 4 months starting from the mid of January 2022. Introductory reading materials and recordings of the previous session can be found in `seminar` section. 
 
 
-#### Reflection from summer reading
-We received 135 registrations for summer. Quoting the numbers, 12 participants joined each week’s session on average. 
-Though the number may seem negligible, we believe it is a good start. 
-We will continue for fall reading with a focus on more in-depth discussion on NLP research. 
-Topics include language understanding, generation, QA, and summarization. 
-Our goal is not to encourage everyone to do ML. Instead, we are focusing on building a space where you can see if ML research fits you. 
-Research is hard! Doing research work with limited resources is nearly impossible. We can keep trying to bridge the gap in between.
+**Target audience:** Anyone interested in NLP and DL can join NLPDhaka reading group. You just need to fill up this form. However, our readings are research-heavy which make the discussion useful for senior undergrad and grad students. If you have plan to do an MSc or PhD, then you may find the discussion beneficial. We hope it will all help to build specialization in NLP  as well as broader computer science domains. We cover  preliminary understanding to advanced level of knowledge in NLP research.
+
+#### Changes in Winter 2022
+1. 3 sessions in a month. We are leaving one week for having some buffer weeks.
+2. We will announce reading event in other social media platforms. We will create an FB page to get more people join the readings.
+3. We distribute tasks to many people through `CORE TEAM`, a fresh addition in current organizational structure.
+4. We are introducing Research Jamming Session. If you have a project idea or ongoing work, you can share them with reading group and invite participants for collaboration.
+5. We are collecting phone numbers. If you are taking a session, you may get a call from us for confirmation.
+
+#### Introducing CORE TEAM
+- Core team will help us to run the reading group consistently. If presenters are not available for a reading session, they will provide backups to host the session. 
+- One important aspect of introducing core team is decentralizing speakers in current reading sessions. They are expectedly going to be a dedicated group to strengthen our reading sessions.
+- The team will have maximum 5 members. Anyone can apply to join the group.
+- Core team will also be an integral part of supporting presenters. They will work on one research project if interested.
+- We will be providing compute resources for the core team (if needed).
+- The team will have opportunity to present their work in the `jamming session`.
 
 #### Why NLP Reading; goals and prospects
 Given the momentum of ML taking over the world, it is obvious we join this exciting technological endeavor for the future. 
