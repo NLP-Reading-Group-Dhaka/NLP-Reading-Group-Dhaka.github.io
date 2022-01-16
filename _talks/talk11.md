@@ -1,6 +1,5 @@
 ---
 name: Bidirectional Attention Flow for Machine Comprehension, Seo et al. ICLR 2017
-
 speakers:
   - Rabiul Awal
 date: 2021-12-26

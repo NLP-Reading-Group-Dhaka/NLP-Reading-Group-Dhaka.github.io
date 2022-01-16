@@ -31,6 +31,9 @@ collections:
   rooms:
     output: true
     permalink: /:collection/:title/
+  pages:
+    output: true 
+    permalink: /:collection/:title/
 
 defaults:
   - scope:
@@ -48,6 +51,12 @@ defaults:
       type: rooms
     values:
       layout: room
+  - scope:
+      path: ""
+      type: page 
+    values:
+      layout: page 
+
 
 
 conference:
@@ -78,7 +87,7 @@ conference:
           - name: 2022 (current)
             disabled: true
           - name: 2021
-            absolute_url: http://neutron.physics.ncsu.edu/NeutronSummerSchool/
+            relative_url: /rooms/fall-2021/
 
   # Main landing page
   main:
@@ -99,8 +108,7 @@ conference:
       main_only: true
       text: |
         An introductory course on deep learning and advanced Natural Language Processing (NLP) 
-        research. This reading course is specifically focused on neural networks for NLP. We will cover 12 
-        research papers and 4 hands-on-tutorials for 4 months starting from the mid of January 2022.
+        research. We have couple of changes such as CORE TEAM and Research Jamming! Stay tuned!
 
         ---
 
@@ -133,6 +141,9 @@ conference:
         color: success
       - name: Question answering
         color: success
+      - name: Convolutional Neural Networks 
+        color: success
+
 
     # Hide icons on talk overview page
     hide_icons: false
@@ -146,7 +157,7 @@ conference:
     url: '/location'
 
     # Disable links to locations
-    hide: false
+    hide: false 
     map:
       # show map
       enable: true
