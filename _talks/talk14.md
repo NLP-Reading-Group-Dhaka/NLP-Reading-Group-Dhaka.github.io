@@ -1,7 +1,7 @@
 ---
 name: Distilling the knowledge in a neural network, Hinton NeurIPS 2015
 speakers:
-  - The Anonymous 
+  - TBA 
 date: 2022-03-13
 categories:
   - Convolutional Neural Networks 

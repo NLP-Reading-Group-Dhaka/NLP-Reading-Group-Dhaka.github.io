@@ -2,7 +2,7 @@
 name: Supervised and Semi-Supervised Text Categorization using LSTM for Region Embeddings, Johnson et al. 2016
 speakers:
   - Zannatul Naim Shanto
-  - Nusrat Jahan Suha
+  - Nusrat Jahan
 date: 2021-08-22
 categories:
   - Sentence Classification

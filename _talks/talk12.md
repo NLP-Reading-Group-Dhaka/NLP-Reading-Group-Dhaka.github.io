@@ -1,7 +1,7 @@
 ---
 name: Visualizing and Understanding Convolutional Networks, Zeiler 2013
 speakers:
-  - The Anonymous 
+  - TBA
 date: 2022-02-20
 categories:
   - Convolutional Neural Networks 

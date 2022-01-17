@@ -1,7 +1,7 @@
 ---
 name: Deep residual learning for image recognition, He 2013
 speakers:
-  - The Anonymous 
+  - TBA
 date: 2022-02-27
 categories:
   - Convolutional Neural Networks 

@@ -13,46 +13,43 @@
   {%- for r in site.data.seminar.rooms -%}
     {%- assign room = site.rooms | where: 'name', r.name | first -%}
     <h2> {{ r.name }} - {{ room.theme }} </h2>
+    <table class="table mx-auto d-flex justify-content-between  w-100">
+      <tbody>
+        <tr>
+          <th scope="col" class="text-left" style="width: 12.5%;">
+            Date
+          </th>
+          <th scope="col" class="text-left" style="width: 17.5%;">
+            Presenter
+          </th>
+          <th scope="col" class="text-left" style="width: 70%;">
+            Title
+          </th>
+        </tr>
 
-    <div class="syncscroll overflow-y-hidden " name="sync-table">
-      <table class="table mx-auto d-flex justify-content-between  w-100">
-        <tbody>
-          <tr>
-            <th scope="col" class="text-left" style= "width:245px !important;">
-              Date
-            </th>
-            <th scope="col" class="text-left" style= "width:245px !important;">
-              Presenter
-            </th>
-            <th scope="col" class="text-left" style= "width:auto !important;">
-              Title
-            </th>
-          </tr>
+        {%- for t in r.talks -%}
+        <tr>
+          {%- assign talk = site.talks | where: 'name', t.name | first -%}
 
-          {%- for t in r.talks -%}
-          <tr>
-            {%- assign talk = site.talks | where: 'name', t.name | first -%}
+          {%- include partials/get_main_category.html -%}
+            
+          <td class="font-weight-light mb-2 text-left" maxlength="10">
+            {%- include partials/show_date.html %}
+          </td>
+          <td class="font-weight-light mb-2 text-left">
+            {%- include partials/list_speakers.html %}
+          </td>
+          <td class="mb-2 text-left">
+            {%- include partials/show_talk.html %}
+          </td> 
+        </tr>
+        {%- endfor %}
 
-            {%- include partials/get_main_category.html -%}
-              
-            <td class="font-weight-light mb-2 text-left" maxlength="10">
-              {%- include partials/show_date.html %}
-            </td>
-              <td class="font-weight-light mb-2 text-left">
-                {%- include partials/list_speakers.html %}
-              </td>
-              <td class="mb-2 text-left">
-                {%- include partials/show_talk.html %}
-              </td> 
-          </tr>
-          {%- endfor %}
-
-          {%- if forloop.last != true %}
-          
-          {%- endif -%}
-        </tbody>
-      </table>
-    </div>
+        {%- if forloop.last != true %}
+        
+        {%- endif -%}
+      </tbody>
+    </table>
   {%- endfor %}
 
   {%- if site.conference.talks.main_categories %}

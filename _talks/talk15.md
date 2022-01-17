@@ -1,7 +1,7 @@
 ---
 name: Language Models are Few-Shot Learners, Brown 2020 
 speakers:
-  - The Anonymous 
+  - TBA 
 date: 2022-03-20
 categories:
   - Convolutional Neural Networks 

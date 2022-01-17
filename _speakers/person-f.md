@@ -1,7 +1,7 @@
 ---
-name: Nusrat Jahan Suha
-first_name: Nusrat Jahan
-last_name: Suha
+name: Nusrat Jahan
+first_name: Nusrat
+last_name: Jahan
 links:
   - name: Linkedin
     absolute_url: https://www.linkedin.com/in/nusrat-jahan-69abba136/
