@@ -11,6 +11,13 @@
   {%- endif -%}
 {%- endif -%}
 
+{%- if page.url == "/" and site.conference.landing_banner.main_only == true -%}
+  {%- assign show_landing_banner = true -%}
+  {%- if show_landing_banner %}
+   <img src="{{ site.conference.landing_banner.img | prepend: '/assets/images/' | prepend: site.baseurl }}" class="align-middle" alt="{{ site.conference.landing_banner.title }}" />
+  {%- endif %}
+{%- endif %}
+
 {%- if site.conference.info_bars.size > 0 -%}
   {%- for info_bar in site.conference.info_bars -%}
     {%- if page.url == "/" and info_bar.pages_only != true -%}

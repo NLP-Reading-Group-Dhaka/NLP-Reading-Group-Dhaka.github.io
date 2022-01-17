@@ -1,7 +1,6 @@
 {% include partials/header.html %}
-  {% assign nbr_days = site.data.seminar.days | size -%}
 
-  <h1 class="display-5 {% if nbr_days > 1 -%} mb-2 {%- else -%} mb-4 {%- endif %}">
+  <h1 class="display-5 mb-4">
     {%- if page.title -%}
       {{- page.title -}}
     {%- else -%}
@@ -11,16 +10,14 @@
 
   {{ content }}
 
-  {%- for d in site.data.seminar.days -%}
-    {%- if nbr_days > 1 -%}
-      {%- include partials/get_day_hash.html %}
-      <div class="tab-pane {%- if forloop.index == 1 %} active{% endif %}" id="{{ day_hash }}" role="tabpanel" aria-labelledby="tab-{{ day_hash }}">
-    {%- endif %}
+  {%- for r in site.data.seminar.rooms -%}
+    {%- assign room = site.rooms | where: 'name', r.name | first -%}
+    <h2> {{ r.name }} - {{ room.theme }} </h2>
+
     <div class="syncscroll overflow-y-hidden " name="sync-table">
       <table class="table mx-auto d-flex justify-content-between  w-100">
         <tbody>
           <tr>
-
             <th scope="col" class="text-left" style= "width:245px !important;">
               Date
             </th>
@@ -30,10 +27,7 @@
             <th scope="col" class="text-left" style= "width:auto !important;">
               Title
             </th>
-        </tr>
-
-        {%- for r in d.rooms -%}
-          {%- assign room = site.rooms | where: 'name', r.name | first -%}
+          </tr>
 
           {%- for t in r.talks -%}
           <tr>
@@ -56,20 +50,10 @@
           {%- if forloop.last != true %}
           
           {%- endif -%}
-
-        {%- endfor %}
-            
         </tbody>
       </table>
     </div>
-
-    {%- if nbr_days > 1 %}
-      </div>
-    {%- endif -%}
-  {%- endfor -%}
-  {%- if nbr_days > 1 %}
-    </div>
-  {%- endif -%}
+  {%- endfor %}
 
   {%- if site.conference.talks.main_categories %}
     <h5 class="mt-4">{{ site.data.lang[site.conference.lang].seminar.legend | default: "Caption" }}</h5>

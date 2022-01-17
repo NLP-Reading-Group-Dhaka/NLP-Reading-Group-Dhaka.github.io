@@ -62,7 +62,16 @@
     text-decoration: none;
   }
 }
+.navbar-logo {
+  max-width: 250px;
+  padding: 0 10px;
+  overflow: hidden;
+}
 
+.navbar-logo a img {
+  max-width: 100%;
+  max-height: 40px;
+}
 
 // Navbar nav
 //

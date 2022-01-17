@@ -53,7 +53,7 @@ defaults:
       layout: room
   - scope:
       path: ""
-      type: page 
+      type: pages 
     values:
       layout: page 
 
@@ -71,7 +71,7 @@ conference:
   navigation:
     logo:
       name: NLPDhaka
-      # img: ''
+      img: logo_nlp_dhaka.png
       url:
     links:
       - name: Seminar
@@ -91,8 +91,8 @@ conference:
 
   # Main landing page
   main:
-    # logo:
-    #   img: ''
+    logo:
+      # img: 
     links:
       - name: Seminar
         relative_url: /seminar/
@@ -103,19 +103,25 @@ conference:
 
   # Information boxes
   info_bars:
-    - title: Registration open for Winter 2022 reading sessions!
-      color: primary
-      main_only: true
-      text: |
-        An introductory course on deep learning and advanced Natural Language Processing (NLP) 
-        research. We have couple of changes such as CORE TEAM and Research Jamming! Stay tuned!
+    # - title: Registration open for Winter 2022 reading sessions!
+    #   color: primary
+    #   main_only: true
+    #   text: |
+    #     An introductory course on deep learning and advanced Natural Language Processing (NLP) 
+    #     research. We have couple of changes such as CORE TEAM and Research Jamming! Stay tuned!
 
-        ---
+    #     ---
 
-        Register here - [https://forms.gle/jRtYpGA9v4LMdA6e6](https://forms.gle/jRtYpGA9v4LMdA6e6)
+    #     Register here - [https://forms.gle/jRtYpGA9v4LMdA6e6](https://forms.gle/jRtYpGA9v4LMdA6e6)
     - text: We usually meet each Sunday Bangladesh time 8 pm.
       color: warning
       pages_only: true
+  
+  # banner
+  landing_banner:
+    img: winter22_reading_banner.jpg
+    title: winter22 banner
+    main_only: true
 
   # Live indications
   live:

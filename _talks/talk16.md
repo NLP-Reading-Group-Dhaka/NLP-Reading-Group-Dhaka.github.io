@@ -2,7 +2,7 @@
 name: ERNIE Enhanced Language Representation with Informative Entities, Zhang 2019
 speakers:
   - The Anonymous 
-date: 2022-03-13
+date: 2022-03-27
 categories:
   - Seq2seq and Attention
   - Talk
