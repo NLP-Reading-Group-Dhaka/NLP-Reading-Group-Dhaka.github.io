@@ -149,6 +149,11 @@ conference:
         color: success
       - name: Convolutional Neural Networks 
         color: success
+      - name: Deep Learning 
+        color: success
+      - name: Tutorial 
+        color: success
+
 
 
     # Hide icons on talk overview page

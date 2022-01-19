@@ -1,16 +1,17 @@
 ---
-name: Visualizing and Understanding Convolutional Networks, Zeiler 2013
+name: Tutorial 1 - Deep Neural Network An Introduction
 speakers:
-  - TBA
-date: 2022-02-20
+  - Zannatul Naim Shanto
+  - Nusrat Jahan
+date: 2021-01-19
 categories:
-  - Convolutional Neural Networks 
-  - Talk
+  - Deep Learning
+  - Tutorial
 links:
   - name: Recording
     icon: video
-    absolute_url: 
-  - name: Pdf
-    absolute_url: https://arxiv.org/pdf/1611.01603.pdf 
+    absolute_url: https://drive.google.com/file/d/1UpwFimeX3tVrAV36f_KW_kW9Z6_FDFHu/view?usp=sharing
+  - name: Slides
+    absolute_url: https://docs.google.com/presentation/d/1g4U7SDJtcYwOQSvBIOn2YoKO0sYtByNKxCNvMfLRXKY/edit?usp=sharing
 ---
-Large Convolutional Network models have recently demonstrated impressive classification performance on the ImageNet benchmark. However there is no clear understanding of why they perform so well, or how they might be improved. In this paper we address both issues. We introduce a novel visualization technique that gives insight into the function of intermediate feature layers and the operation of the classifier. We also perform an ablation study to discover the performance contribution from different model layers. This enables us to find model architectures that outperform Krizhevsky \etal on the ImageNet classification benchmark. We show our ImageNet model generalizes well to other datasets: when the softmax classifier is retrained, it convincingly beats the current state-of-the-art results on Caltech-101 and Caltech-256 datasets.
+Shallow and Deep Neural Nets: multilayer perceptrons, wide vs depth, universal function approximation

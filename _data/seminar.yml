@@ -1,8 +1,12 @@
 rooms:
 - name: Winter 2022
   talks:
-    - name: Visualizing and Understanding Convolutional Networks, Zeiler 2013
+    - name: Tutorial 1 - Deep Neural Network An Introduction
       time_start: '17:31'
+      time_end: '17:32'
+
+    - name: Visualizing and Understanding Convolutional Networks, Zeiler 2013
+      time_start: '17:33'
       time_end: '17:40'
 
     - name: Deep residual learning for image recognition, He 2013
