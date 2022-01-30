@@ -2,7 +2,7 @@
 name: Tutorial 2 - Training Deep Neural Networks
 speakers:
   - Tahnik Ahmed 
-date: 2021-01-23
+date: 2022-01-23
 categories:
   - Deep Learning
   - Tutorial

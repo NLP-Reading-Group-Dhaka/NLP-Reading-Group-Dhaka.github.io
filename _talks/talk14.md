@@ -4,7 +4,7 @@ speakers:
   - Toshiba Zaman
   - Shahad Mahmud
   - Zannatul Naim Shanto 
-date: 2021-01-30
+date: 2022-01-30
 categories:
   - Deep Learning
   - Tutorial

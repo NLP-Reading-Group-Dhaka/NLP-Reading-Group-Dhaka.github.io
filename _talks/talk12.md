@@ -3,7 +3,7 @@ name: Tutorial 1 - Deep Neural Network An Introduction
 speakers:
   - Zannatul Naim Shanto
   - Nusrat Jahan
-date: 2021-01-19
+date: 2022-01-19
 categories:
   - Deep Learning
   - Tutorial
