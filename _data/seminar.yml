@@ -13,6 +13,10 @@ rooms:
       time_start: '17:33'
       time_end: '17:34'
 
+    - name: Tutorial 4 - Regularization in Deep Neural Nets
+      time_start: '17:33'
+      time_end: '17:34'
+
     - name: Visualizing and Understanding Convolutional Networks, Zeiler 2013
       time_start: '17:35'
       time_end: '17:40'
