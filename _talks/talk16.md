@@ -1,7 +1,7 @@
 ---
 name: Visualizing and Understanding Convolutional Networks, Zeiler 2013
 speakers:
-  - TBA
+  - Rabiul Awal
 date: 2022-02-20
 categories:
   - Convolutional Neural Networks 
@@ -9,7 +9,9 @@ categories:
 links:
   - name: Recording
     icon: video
-    absolute_url: 
+    absolute_url: https://drive.google.com/file/d/1IM04H48YOnRMiJErvyTukzGBtQF8JcpF/view?usp=sharing
+  - name: Slides
+    absoulute_url: https://web.eecs.umich.edu/~justincj/slides/eecs498/498_FA2019_lecture14.pdf
   - name: Pdf
     absolute_url: https://arxiv.org/pdf/1611.01603.pdf 
 ---
