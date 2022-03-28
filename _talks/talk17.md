@@ -1,7 +1,7 @@
 ---
 name: Deep residual learning for image recognition, He 2013
 speakers:
-  - TBA
+  - Rabiul Awal
 date: 2022-02-27
 categories:
   - Convolutional Neural Networks 
@@ -9,7 +9,7 @@ categories:
 links:
   - name: Recording
     icon: video
-    absolute_url: 
+    absolute_url: https://drive.google.com/file/d/11LJWbJmsa2yDLSIQwOF6Lh8OXNN_wjQU/view?usp=sharing
   - name: Pdf
     absolute_url: https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/He_Deep_Residual_Learning_CVPR_2016_paper.pdf
 ---

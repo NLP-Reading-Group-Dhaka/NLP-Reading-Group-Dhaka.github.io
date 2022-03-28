@@ -1,15 +1,15 @@
 ---
 name: Language Models are Few-Shot Learners, Brown 2020 
 speakers:
-  - TBA 
+  - Tahsin Mayeesha 
 date: 2022-03-20
 categories:
-  - Convolutional Neural Networks 
+  - Pre-trained Language Models & Fine-tuning
   - Talk
 links:
   - name: Recording
     icon: video
-    absolute_url: 
+    absolute_url: https://drive.google.com/file/d/1NXp_4yMUkLQoB9FuLz76ySBRCC9PRCtz/view?usp=sharing
   - name: Pdf
     absolute_url: https://arxiv.org/pdf/2005.14165.pdf 
 ---
