@@ -1,0 +1,53 @@
+{
+    "days": [
+    ],
+
+    "rooms": {
+    },
+
+    "speakers": {
+        "Rabiul Awal" : {
+            "name": "Rabiul Awal",
+            "href": "/speakers/person-a/"
+        },
+        "Shadman Rohan" : {
+            "name": "Shadman Rohan",
+            "href": "/speakers/person-b/"
+        },
+        "Sakira Hassan" : {
+            "name": "Sakira Hassan",
+            "href": "/speakers/person-c/"
+        },
+        "TBA" : {
+            "name": "TBA ",
+            "href": ""
+        },
+        "Zannatul Naim Shanto" : {
+            "name": "Zannatul Naim Shanto",
+            "href": "/speakers/person-e/"
+        },
+        "Nusrat Jahan" : {
+            "name": "Nusrat Jahan",
+            "href": "/speakers/person-f/"
+        },
+        "Tahnik Ahmed" : {
+            "name": "Tahnik Ahmed",
+            "href": "/speakers/person-g/"
+        },
+        "Toshiba Zaman" : {
+            "name": "Toshiba Zaman",
+            "href": "/speakers/person-h/"
+        },
+        "Shahad Mahmud" : {
+            "name": "Shahad Mahmud",
+            "href": "/speakers/person-i/"
+        },
+        "Tahsin Mayeesha" : {
+            "name": "Tahsin Mayeesha",
+            "href": "/speakers/person-j/"
+        }
+    },
+
+    "talks": {
+    }
+}
