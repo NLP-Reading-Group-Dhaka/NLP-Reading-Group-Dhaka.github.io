@@ -80,14 +80,14 @@ conference:
         relative_url: /talks/
       - name: Speakers
         relative_url: /speakers/
-      # - name: Location
-      #   relative_url: /location/
-      - name: Previous Editions
-        menu:
-          - name: 2022 (current)
-            disabled: true
-          - name: 2021
-            relative_url: /rooms/fall-2021/
+      - name: FAQ
+        relative_url: /faq/
+      # - name: Previous Editions
+      #   menu:
+      #     - name: 2022 (current)
+      #       disabled: true
+      #     - name: 2021
+      #       relative_url: /rooms/fall-2021/
 
   # Main landing page
   main:
@@ -146,7 +146,7 @@ conference:
       - name: Pre-trained Language Models & Fine-tuning
         color: success
       - name: Question answering
-        color: success
+        color: info
       - name: Convolutional Neural Networks 
         color: success
       - name: Deep Learning 
