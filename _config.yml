@@ -191,3 +191,7 @@ conference:
 
     # Show intermediary time steps (next to full hours)
     show_alltimes: true
+
+  faq:
+    # URL of faq page
+    url: '/faq'
